@@ -1,0 +1,22 @@
+{
+  "name": "itx-system-services-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "worker": "node src/workers/notification.worker.js"
+  },
+  "dependencies": {
+    "bullmq": "^6.0.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.2.1",
+    "ioredis": "^5.11.1",
+    "pg": "^8.22.0"
+  }
+}
